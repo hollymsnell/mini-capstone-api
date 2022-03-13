@@ -1,0 +1,12 @@
+###Product Index
+GET http://localhost:3000/products
+
+###Product Create
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "cat sweater",
+  "price": 16,
+  "description": "warm sweater with cats on it"
+}

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 get "/products" =>"products#index"
+post "/products" => "products#create"
 get "/products/:id" => "products#show"
 
 #get "/first_product" => "products#first_product_method"  
