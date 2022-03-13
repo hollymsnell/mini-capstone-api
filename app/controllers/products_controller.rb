@@ -19,21 +19,15 @@ class ProductsController < ApplicationController
     render json: product.as_json 
   end
 
-  
-  
-  
-  
-  def first_product_method
-    first_product = Product.first
-    render json: first_product.as_json
-  end
-  def second_product_method
-    second_product = Product.second
-    render json: second_product.as_json
-  end
-  def third_product_method
-    third_product = Product.third
-    render json: third_product.as_json
-  end
+  def update
+    product_id = params["id"]
+    product = Product.find(product_id)
 
+    product.name = params["name"] || product.name
+    product.price = params["price"] || product.price
+    product.description = params["description"] || product.description
+
+    product.save
+    render json: product.as_json
+end
 end

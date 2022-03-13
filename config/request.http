@@ -1,5 +1,5 @@
 ###Product Index
-GET http://localhost:3000/products
+GET http://localhost:3000/products/
 
 ###Product Create
 POST http://localhost:3000/products
@@ -10,3 +10,12 @@ Content-Type: application/json
   "price": 16,
   "description": "warm sweater with cats on it"
 }
+
+###Recipe Update
+PATCH http://localhost:3000/products/4
+Content-Type: application/json 
+
+{
+  "price": 20
+}
+
