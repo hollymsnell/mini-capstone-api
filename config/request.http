@@ -9,10 +9,7 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-  "name": "nonsense",
-  "price": 16,
-  "image_url": "nil",
-  "description": "more nonsense"
+ 
 }
 
 ###Product Update
@@ -20,12 +17,9 @@ PATCH http://localhost:3000/products/4
 Content-Type: application/json 
 
 {
-  "name": "cat sweater",
-  "price": 20,
-  "description": "Fuzzy sweater with cats on it",
-  "image_url": "https://img.ltwebstatic.com/images3_pi/2021/09/01/1630491559ad0d138a628c8511e2d3af1bbc1520e8_thumbnail_600x.webp"
+  
 }
 
 ### Product Destroy
-DELETE http://localhost:3000/products/5
+DELETE http://localhost:3000/products/4
 Content-Type: application/json 
