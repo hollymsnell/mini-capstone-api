@@ -1,3 +1,8 @@
+Supplier.create([
+  {name: "target", email: "testfun@test.com", phone_number: "444-4444"},
+  {name: "walmart", email: "thisistest@test.com", phone_number: "333-3333"}
+])
+
 Product.create!([
   {name: "warm blanket", price: 45, image_url: "https://images-us-prod.cms.commerce.dynamics.com/cms/api/cncgmclkfv/imageFileData/search?fileName=/Products%2F136666P%20%5E%20%20%5E%2048X72%20%5E%20Gray%20%5E%20Prime_000_001.png&w=900&h=675&q=80&m=6&f=jpg&cropfocalregion=true", description: "comfortable weighted blanket made for a cozy winter day or night.", number_available: 12},
   {name: "hairbrush", price: 5, image_url: "https://m.media-amazon.com/images/I/71dIyWwzYFL._SL1500_.jpg", description: "brush for wet hair to reduce breakage", number_available: 45},
@@ -7,7 +12,3 @@ Product.create!([
 ])
 
 
-Supplier.create([
-  {name: "target", email: "testfun@test.com", phone_number: "444-4444"},
-  {name: "walmart", email: "thisistest@test.com", phone_number: "333-3333"}
-])

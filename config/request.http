@@ -9,7 +9,12 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
- "name": "David Bowie Poster"
+ "name": "George of the Jungle Movie",
+ "price": 15,
+ "description": "The hit 1997 film",
+ "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ06OFG3CgXX4WkyL9V5_sKex5IqFYuVsv3vJ0rKuzgZhI2dlQG",
+ "number_available": 2,
+ "supplier_id": 2
 }
 
 ###Product Update
