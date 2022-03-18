@@ -5,3 +5,9 @@ Product.create!([
   {name: "cat sweater", price: 20, image_url: "https://img.ltwebstatic.com/images3_pi/2021/09/01/1630491559ad0d138a628c8511e2d3af1bbc1520e8_thumbnail_600x.webp", description: "Fuzzy sweater with cats on it", number_available: 14},
   {name: "water bottle", price: 15, image_url: "https://cdn.shopify.com/s/files/1/0274/4988/4706/products/Zen_New_Bamboo_1500x.png?v=1613992863", description: "large durable water bottle suitable for rigorous outdoor activity", number_available: 20}
 ])
+
+
+Supplier.create([
+  {name: "target", email: "testfun@test.com", phone_number: "444-4444"},
+  {name: "walmart", email: "thisistest@test.com", phone_number: "333-3333"}
+])
