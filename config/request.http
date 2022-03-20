@@ -9,12 +9,12 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
- "name": "George of the Jungle Movie",
- "price": 15,
- "description": "The hit 1997 film",
- "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ06OFG3CgXX4WkyL9V5_sKex5IqFYuVsv3vJ0rKuzgZhI2dlQG",
- "number_available": 2,
- "supplier_id": 2
+ "name": "G.I Joe",
+ "price": 30,
+ "description": "toy for all ages",
+ "image_url": "https://m.media-amazon.com/images/I/81kVhGy0VWL._AC_SY741_.jpg",
+ "number_available": 4,
+ "supplier_id": 1
 }
 
 ###Product Update
