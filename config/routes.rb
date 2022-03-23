@@ -18,4 +18,8 @@ post "/users" => "users#create"
 ###session routes
 post "/sessions" => "sessions#create"
 
+###order routes
+get "/orders" => "orders#index"
+post "/orders" => "orders#create"
+get "/orders/:id" => "orders#show"
 end
