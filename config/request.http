@@ -1,8 +1,8 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgyNTc2MzN9.AM70Xy-SLeVEqiT_qKBfiMUukKNmuAFgAWwnTG2uWfM
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTA1ODQzMTF9.BDivqPHGYb4bq60z7ZjoE_jLJRut7LLsof_6T7Pd8Jo
 
 ###Product Index
 GET http://localhost:3000/products/
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDc5OTU3MTZ9.F1kYYdZ5Uc2B-4wQW3V5J6vbUQR80Xn2kZHZOwxnE-k
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 ###Product Show
@@ -10,10 +10,11 @@ GET http://localhost:3000/products/3
 
 ###Product Create
 POST http://localhost:3000/products
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
- "name": "G.I Joe",
+ "name": "G.I. Joe",
  "price": 30,
  "description": "toy for all ages",
  "image_url": "https://m.media-amazon.com/images/I/81kVhGy0VWL._AC_SY741_.jpg",
@@ -30,7 +31,8 @@ Content-Type: application/json
 }
 
 ### Product Destroy
-DELETE http://localhost:3000/products/4
+DELETE http://localhost:3000/products/10
+Authorization: Bearer {{jwt}}
 Content-Type: application/json 
 
 ### Supplier Index
@@ -53,7 +55,7 @@ POST http://localhost:3000/sessions
 Content-Type: application/json
 
 {
-  "email": "test@example.com",
+  "email": "test1@example.com",
   "password": "password1"
 }
 
