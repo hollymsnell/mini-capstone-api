@@ -1,7 +1,7 @@
-Supplier.create([
-  {name: "target", email: "testfun@test.com", phone_number: "444-4444"},
-  {name: "walmart", email: "thisistest@test.com", phone_number: "333-3333"}
-])
+# Supplier.create([
+#   {name: "target", email: "testfun@test.com", phone_number: "444-4444"},
+#   {name: "walmart", email: "thisistest@test.com", phone_number: "333-3333"}
+# ])
 
 Product.create!([
   {name: "warm blanket", price: 45, description: "comfortable weighted blanket made for a cozy winter day or night.", number_available: 12, supplier_id: 1},
